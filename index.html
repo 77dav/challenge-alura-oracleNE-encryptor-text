@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Encriptador de texto</title>
-</head>
-<body>
+	
+	<head>
 
-	<header>
-		<img src="images/logo.png" alt="logo alura">
-	</header>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Encriptador de texto</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
 
-</body>
+	</head>
+
+	<body>
+
+		<header>
+				<img class="logo-alura" src="images/logo.png" alt="logo alura">
+		</header>
+
+		<main>
+
+			<textarea cols="90" rows="20" id="entrada-de-texto" class="textarea" placeholder="Ingrese el texto aqui"></textarea>
+
+			<div class="panel-derecho">
+			</div>
+
+			<img class="muñeco" src="images/muñeco.png" alt="muñeco">
+			
+			<div class="texto-panel">
+				<p class="p1">Ningún mensaje fue encontrado</p>
+				<p class="p2">Ingresa el texto que desees encriptar o desencriptar.</p>
+			</div>
+			
+				
+			<img src="images/vector.png" alt="signo exclamacion">
+			<p>Solo letras minúsculas y sin acentos</p>
+			<button>Encriptar</button>
+			<button>Desencriptar</button>
+
+		</main>
+
+	</body>
 </html>
