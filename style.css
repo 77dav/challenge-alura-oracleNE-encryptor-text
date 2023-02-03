@@ -5,7 +5,7 @@ body{
 	height: 1024px;
 
 	/* Light blue/light-blue-100 */
-	background: lightcoral;
+	background: lightcyan;
 
 	font-family: 'Montserrat Alternates', sans-serif;
 }
@@ -27,20 +27,21 @@ body{
 textarea{
 	/* Ingrese el texto aqui */
 	position: absolute;
-	width: 577px;
+	width: 675px;
 	height: 48px;
 	left: 240px;
 	top: 168px;
 
 	font-style: normal;
 	font-weight: 400;
-	font-size: 32px;
-	line-height: 150%;
+	font-size: 26px;
+	line-height: 175%;
 	/* identical to box height, or 48px */
 
-
 	/* Dark blue/dark-blue-300 */
-	color: #0A3871;
+	color: darkblue;
+
+	border-radius: 18px;
 }
 
 .panel-derecho{
@@ -105,6 +106,7 @@ textarea{
 	right: 0%;
 	top: 0%;
 	bottom: 0%;
+	width: 8%;
 }
 
 .advetencia p{
@@ -116,13 +118,13 @@ textarea{
 
 	font-style: normal;
 	font-weight: 400;
-	font-size: 20px;
-	line-height: 150%;
+	font-size: 19px;
+	line-height: 171%;
 	/* identical to box height, or 18px */
 
 	/* Gray/gray-400 */
-	color: #495057;
-	opacity: 0.8;
+	color: black;
+	font-weight: bold;
 
 	/* Inside auto layout */
 	flex: none;
@@ -173,6 +175,9 @@ textarea{
 }
 
 .button{	
+	/* Frame 3 */
+
+	/* Auto layout */
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
@@ -187,52 +192,28 @@ textarea{
 }
 
 .b1{
-	/* Button */
-	/* Auto layout */
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	padding: 24px;
-	gap: 8px;
 	width: 328px;
 	height: 67px;
 
-	/* Dark blue/dark-blue-300 */
-	background: #0A3871;
-	border-radius: 24px;
 
-	/* Inside auto layout */
-	flex: none;
-	order: 0;
-	flex-grow: 0;
-}
-
-.b2{
-	/* Button */
-
-	box-sizing: border-box;
-
-	/* Auto layout */
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	padding: 24px;
-	gap: 8px;
-
-	width: 328px;
-	height: 67px;
-
-	/* Light gray */
-	background: #D8DFE8;
-	/* Dark blue/dark-blue-300 */
+	background: #87c4fa;
 
 	border: 1px solid #0A3871;
 	border-radius: 24px;
 
-	/* Inside auto layout */
-	flex: none;
-	order: 1;
-	flex-grow: 0;
+	font-size: x-large;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
 
-	text-align: center;
+.b2{
+	width: 328px;
+	height: 67px;
+
+	background: #D8DFE8;
+
+	border: 1px solid #0A3871;
+	border-radius: 24px;
+
+	font-size: x-large;
+	font-family: 'Montserrat Alternates', sans-serif;
 }
