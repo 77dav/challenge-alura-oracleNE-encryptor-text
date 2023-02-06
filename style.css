@@ -84,56 +84,6 @@ textarea{
 	top: 619px;
 }
 
-.advetencia{
-	/* Frame 1 */
-
-	/* Auto layout */
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	padding: 0px;
-	gap: 8px;
-
-	position: absolute;
-	width: 229px;
-	height: 18px;
-	left: 240px;
-	top: 851px;
-}
-
-.advetencia img{
-	/* Vector */
-	position: absolute;
-	left: 0%;
-	right: 0%;
-	top: 0%;
-	bottom: 0%;
-	width: 8%;
-}
-
-.advetencia p{
-	/* Solo letras minúsculas y sin acentos */
-	position: absolute;
-	left: 22px;
-	width: 370px;
-	height: 31px;
-
-	font-style: normal;
-	font-weight: 400;
-	font-size: 19px;
-	line-height: 171%;
-	/* identical to box height, or 18px */
-
-	/* Gray/gray-400 */
-	color: black;
-	font-weight: bold;
-
-	/* Inside auto layout */
-	flex: none;
-	order: 1;
-	flex-grow: 0;
-}
-
 .p1{
 	/* Ningún mensaje fue encontrado */
 	width: 336px;
@@ -176,6 +126,76 @@ textarea{
 	flex-grow: 0;
 }
 
+.p3{
+	/* Lorem ipsum*/
+	position: absolute;
+	width: 336px;
+	height: 781px;
+	left: 1032px;
+	top: 72px;
+
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 150%;
+	/* or 36px */
+
+	/* Gray/gray-400 */
+	color: #495057;
+}
+
+.advertencia{
+	/* Frame 1 */
+
+	/* Auto layout */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+	gap: 8px;
+
+	position: absolute;
+	width: 229px;
+	height: 18px;
+	left: 240px;
+	top: 851px;
+}
+
+.advertencia img{
+	/* Vector */
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+	width: 8%;
+}
+
+.advertencia p{
+	/* Solo letras minúsculas y sin acentos */
+	position: absolute;
+	left: 22px;
+	width: 370px;
+	height: 31px;
+
+	font-style: normal;
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 171%;
+	/* identical to box height, or 18px */
+
+	/* Gray/gray-400 */
+	color: black;
+	font-weight: bold;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+
+
+
 .button{	
 	/* Frame 3 */
 
@@ -199,7 +219,7 @@ textarea{
 
 	background: #0A3871;
 
-	border: 1px solid #0A3871;
+	/*border: 1px solid #0A3871;*/
 	border-radius: 24px;
 
 	font-size: x-large;
@@ -220,9 +240,16 @@ textarea{
 
 	background: #D8DFE8;
 
-	border: 1px solid #0A3871;
+	/*border: 1px solid #0A3871;*/
 	border-radius: 24px;
 
 	font-size: x-large;
 	font-family: 'Montserrat Alternates', sans-serif;
+
+	cursor: pointer;
+}
+
+.b2:hover{
+	box-shadow: 0px 0px 13px 2px rgb(0 251 103);
+	transform: scale(1.015);
 }
