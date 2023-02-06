@@ -1,15 +1,15 @@
-let input = document.querySelector("input");
-let b1 = document.getElementById("botonencriptar");
-let b2 = document.getElementById("botondesencriptar");
-let p = document.getElementById("parrafo");
+let textarea = document.querySelector("textarea");
+let b1 = document.querySelector(".boton-encriptar");
+let b2 = document.querySelector(".boton-desencriptar");
+let salidaTexto = document.getElementById("salida-de-texto");
 let vocales = ["a", "e", "i", "o", "u"];
 let reemplazos = ["ai", "enter", "ines", "ober", "ufat"];
 
-input.focus();
+textarea.focus();
 
 function encriptarTexto(){
 
-    let textoIngresado = input.value;
+    let textoIngresado = textarea.value;
     let textoEncriptado = "";
 
     for(let i = 0; i < textoIngresado.length; i++){
@@ -41,7 +41,22 @@ function encriptarTexto(){
 
 function mostrarTextoEncriptado(){
     let mostrarTEncriptado = encriptarTexto();
-    p.innerHTML = mostrarTEncriptado;
+    salidaTexto.innerHTML = mostrarTEncriptado;
+}
+
+function desencriptarTexto(){
+    let textoIngresado = textarea.value;
+    let textoDesencriptado = textoIngresado; 
+    for(let i = 0; i < vocales.length; i++){
+        textoDesencriptado = textoDesencriptado.replaceAll(reemplazos[i], vocales[i])
+    }    
+    return textoDesencriptado;
+}
+
+function mostrarTextoDesencriptado(){
+    let mostrarTextoDesencriptado = desencriptarTexto();
+    salidaTexto.innerHTML = mostrarTextoDesencriptado;
 }
 
 b1.onclick = mostrarTextoEncriptado;
+b2.onclick = mostrarTextoDesencriptado;

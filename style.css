@@ -90,7 +90,7 @@ textarea{
 	height: 58px;
 
 	font-style: normal;
-	font-weight: 700;
+	font-weight: bold;
 	font-size: 24px;
 	line-height: 120%;
 	/* or 29px */
@@ -126,7 +126,7 @@ textarea{
 	flex-grow: 0;
 }
 
-.p3{
+#salida-de-texto{
 	/* Lorem ipsum*/
 	position: absolute;
 	width: 336px;
@@ -135,7 +135,7 @@ textarea{
 	top: 72px;
 
 	font-style: normal;
-	font-weight: 400;
+	font-weight: bold;
 	font-size: 24px;
 	line-height: 150%;
 	/* or 36px */
@@ -213,7 +213,7 @@ textarea{
 	top: 885px;
 }
 
-.b1{
+.boton-encriptar{
 	width: 328px;
 	height: 67px;
 
@@ -229,12 +229,12 @@ textarea{
 	cursor: pointer;
 }
 
-.b1:hover{
+.boton-encriptar:hover{
 	box-shadow: 0px 0px 13px 2px rgb(0 251 103);
 	transform: scale(1.015);
 }
 
-.b2{
+.boton-desencriptar{
 	width: 328px;
 	height: 67px;
 
@@ -249,7 +249,14 @@ textarea{
 	cursor: pointer;
 }
 
-.b2:hover{
+.boton-desencriptar:hover{
 	box-shadow: 0px 0px 13px 2px rgb(0 251 103);
 	transform: scale(1.015);
+}
+
+footer{
+	background: black;
+	color: white;
+	font-size: 30px;
+	text-align: center;
 }
