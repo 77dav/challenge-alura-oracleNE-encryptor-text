@@ -1,11 +1,13 @@
 let textarea = document.querySelector("textarea");
 let b1 = document.querySelector(".boton-encriptar");
 let b2 = document.querySelector(".boton-desencriptar");
+let b3 = document.getElementById("boton-copiar");
 let salidaTexto = document.getElementById("salida-de-texto");
+let textoPanel = document.querySelector(".texto-panel");
 let vocales = ["a", "e", "i", "o", "u"];
-let reemplazos = ["ai", "enter", "ines", "ober", "ufat"];
+let reemplazos = ["ai", "enter", "imes", "ober", "ufat"];
 
-textarea.focus();
+//textarea.focus();
 
 function encriptarTexto(){
 
@@ -41,7 +43,9 @@ function encriptarTexto(){
 
 function mostrarTextoEncriptado(){
     let mostrarTEncriptado = encriptarTexto();
+    textoPanel.style.visibility = "hidden"; //oculta los elementos del div texto-panel
     salidaTexto.innerHTML = mostrarTEncriptado;
+    document.getElementById("boton-copiar").style.visibility = "visible";
 }
 
 function desencriptarTexto(){
@@ -58,5 +62,10 @@ function mostrarTextoDesencriptado(){
     salidaTexto.innerHTML = mostrarTextoDesencriptado;
 }
 
+function copiarTexto() {
+    navigator.clipboard.writeText(salidaTexto.textContent);
+}
+
+b3.onclick = copiarTexto;
 b1.onclick = mostrarTextoEncriptado;
 b2.onclick = mostrarTextoDesencriptado;
