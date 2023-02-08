@@ -48,7 +48,7 @@ textarea{
 
 .panel-derecho{
 	/* Rectangle 1 */
-	position: relative;
+	position: absolute;
 	width: 400px;
 	height: 944px;
 	left: 1000px;
@@ -242,7 +242,7 @@ textarea{
 
 	background: #0A3871;
 
-	/*border: 1px solid #0A3871;*/
+	border: 1px solid #0A3871;
 	border-radius: 24px;
 
 	font-size: x-large;
@@ -264,7 +264,7 @@ textarea{
 
 	background: #D8DFE8;
 
-	/*border: 1px solid #0A3871;*/
+	border: 1px solid #0A3871;
 	border-radius: 24px;
 
 	font-size: x-large;
@@ -280,8 +280,8 @@ textarea{
 }
 
 footer{
-	background: black;
-	color: white;
+	background: #FFB0B5;
+	color: black;
 	font-size: 16px;
 	text-align: right;
 	padding: 15px;
