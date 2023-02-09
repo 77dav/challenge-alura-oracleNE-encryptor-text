@@ -285,4 +285,7 @@ footer{
 	font-size: 16px;
 	text-align: right;
 	padding: 15px;
+	position: absolute;
+	bottom: -50px;
+	width: 100%;
 }
